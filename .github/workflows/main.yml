@@ -15,4 +15,5 @@ jobs:
 
       - name: Deploy to Surge.sh
         run: |
+          npm install -g surge
           surge ./ --domain 1erparcialelectiva2.surge.sh --token ${{ secrets.SURGE_TOKEN }}
